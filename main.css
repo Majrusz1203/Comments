@@ -1,0 +1,137 @@
+/* - Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%) */
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --light-blue: hsl(210, 60%, 98%);
+    --blue1: hsl(211, 68%, 94%);
+    --blue2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-blue: hsl(219, 12%, 42%);
+    --very-dark: hsl(224, 21%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "JakartaMedium";
+    src: url("./assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+
+body {
+    font-family: "JakartaMedium";
+    background-color: var(--blue1);
+}
+
+
+.wrapper {
+    background-color: var(--white);
+    width: 70%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left {
+    font-weight: 900;
+    font-size: 26px;
+
+}
+
+.top-left span {
+    background-color: var(--blue);
+    padding: 1px 8px;
+    margin-left: 3px;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.wrapper-content{
+    margin-top: 20px;
+
+}
+
+.top-right {
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.comment{
+    background-color: var(--blue1);
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--grayish-blue);
+}
+
+.comment1{
+    background-color: var(--white);
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--grayish-blue);
+}
+
+.comment-img{
+    width: 60px;
+
+}
+.comment-img-2{
+    width: 60px;
+    align-self: flex-start;
+    
+}
+.text-gray-1{
+    color: var(--blue);
+}
+
+.text-gray{
+    color: var(--dark-blue);
+}
+
+.text-bold{
+    color: var(--very-dark);
+}
+
+.comment-text-1{
+    display: flex;
+justify-content: space-between;
+flex-grow: 1;
+}
+
+.hello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi{
+    padding: 20px;
+    border: solid 1px;
+}
